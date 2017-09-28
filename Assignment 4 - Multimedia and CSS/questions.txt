@@ -1,0 +1,32 @@
+Questions:
+1. Why do mobile phones usually ignore auto play on video elements?
+
+Answer: People often have limited data plans, so mobile sites should be lighter that is acceptable on
+desktop. Therefore mobile phones will disable auto play to save mobile data for the user.
+
+
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with
+320 x 568 resolution?
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+#logo {
+display: none;
+}
+}
+
+Answer: The code snippet will do nothing for the visitor, as the media query will only kick
+in for devices that are between 768px to 1024px in device width. For a tablet for example.
+
+
+3. Mention some of the advantages of having a single responsive website instead of dedicated versions
+like m.til.no for mobile and til.no for desktop?
+
+Answer: There is less to maintain as you don't have to update two different websites for every new
+design on the page. In addition users don't have to deal with two different urls for the page.
+Let's say the user want's to share a link from cellphone, and is on the m.til.no, while the one
+the user would want to share the page with is on desktop. How would you copy the link to that the
+other person could see the desktop version? You'd probably have to remove the '.m' part from the link
+manually. The same situation occurs if you bookmark something to view on desktop later, and the link
+sends you to the mobile site. If you accidentally go to the mobile website, it would not show up
+as user friendly for desktop.

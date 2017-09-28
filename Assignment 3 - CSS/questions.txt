@@ -1,0 +1,23 @@
+* 1. What is the difference between position: absolute and position: fixed? *
+
+Fixed is relative to the browser viewport, for example if something is
+positioned 10px from the top with a fixed position, no matter how you change
+the viewport, that element will always be on the same spot, 10px from the top.
+Even if you scroll down, that element will not move. Handy with fixed navigation
+bars that should always stay at the top.
+
+The absolute position is relative to its first *positioned* ancestor (e.g. a parent that
+has position:relative). Meaning if the ancestor moves, so does the element with
+the absolute position, which always is on the same spot relative to the ancestor.
+If there is no positioned ancestor, then the absolute position is relative
+to the body of the document.
+
+So the difference lies in what they are positioned relative to.
+
+
+* 2. With CSS3, how do we access the third element within another element? *
+
+Let's say you have an unordered list with 5 elements (<li> element within
+<ul> element).
+To select the third element you could write the following:
+    ul li:nth-child(3) {}

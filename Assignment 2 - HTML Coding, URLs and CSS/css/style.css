@@ -1,0 +1,16 @@
+header {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+section img {
+    max-width: 150px;
+    border-style: solid;
+}

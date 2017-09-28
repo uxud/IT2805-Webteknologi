@@ -1,0 +1,8 @@
+ul {
+    list-style: square;
+}
+
+ul li:last-child{
+    list-style: circle;
+    color: #FAA21B;
+}
